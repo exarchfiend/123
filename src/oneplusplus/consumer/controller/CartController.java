@@ -19,7 +19,6 @@ public class CartController {
 	@RequestMapping(value = "/get", method = RequestMethod.GET)
 	public String get(Cart param,Model model) {
 		cartServiceInterface.get(param);
-		model.addAttribute("malls");
 		return "/WEB-INF/view/consumer/cart.jsp";
 	}
 }

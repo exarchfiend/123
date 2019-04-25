@@ -19,8 +19,7 @@ public class CartDao implements CartDaoInterface{
 	
 	@Override
 	public List<Cart> get(Cart cart) {
-		return jdbcTemplate.query("", new RowMapper<Cart>() {
-
+		return jdbcTemplate.query("SELECT * FROM `cart`", new RowMapper<Cart>() {
 			@Override
 			public Cart mapRow(ResultSet rs, int row) throws SQLException {
 				Cart cart = new Cart();

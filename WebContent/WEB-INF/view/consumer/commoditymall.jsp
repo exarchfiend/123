@@ -10,7 +10,7 @@
 		<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
 		<title>手机商城</title>
 		<!-- Bootstrap -->
-		<link href="/oneplus/WebContent/WEB-INF/view/css/bootstrap.min.css" rel="stylesheet">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
 
 		<!-- <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script> -->
@@ -52,11 +52,14 @@
 			<div class="header  hidden-xs  hidden-sm visible-md visible-lg  text-right">
 				<div class="col-xs-12 text-right">
 					<ul class="nav navbar-nav navbar-right">
-						<li><a data-toggle="modal" data-target="#register" href=""><span class="glyphicon glyphicon-user"></span> 注册</a></li>
-						<li><a data-toggle="modal" data-target="#login" href=""><span class="glyphicon glyphicon-log-in"></span> 登录</a></li>
-						<li><a  href="./MyAfterLogin.html"><span class="glyphicon glyphicon-th-list"></span> 个人中心</a></li>
-						<li><a  href="./shoppingCart.html"><span class="glyphicon glyphicon-shopping-cart"></span>
-								购物车</a></li>
+						<li><a data-toggle="modal" data-target="#register" href="">
+						<span class="glyphicon glyphicon-user"></span> 注册</a></li>
+						<li><a data-toggle="modal" data-target="#login" href="">
+						<span class="glyphicon glyphicon-log-in"></span> 登录</a></li>
+						<li><a  href="http://172.16.237.46:8080/oneplus/usercenter/get#">
+						<span class="glyphicon glyphicon-th-list"></span> 个人中心</a></li>
+						<li><a  href="http://172.16.237.46:8080/oneplus/cart/get#">
+						<span class="glyphicon glyphicon-shopping-cart"></span> 购物车</a></li>
 					</ul>
 				</div>
 				<!-- 注册窗口 -->
@@ -203,10 +206,10 @@
 
 
 		<!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
-		<script src="/oneplus/WebContent/WEB-INF/view/js/jquery.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
 		<!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
-		<script src="/oneplus/WebContent/WEB-INF/view/js/bootstrap.min.js"></script>
-		<script src="/oneplus/WebContent/WEB-INF/view/js/vue.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+		<script src="https://cdn.staticfile.org/vue/2.2.2/vue.min.js"></script>
 		<script>
 			var app = new Vue({
 				el: '#app',
@@ -232,204 +235,7 @@
 						name: '生活馆'
 					}],
 
-					navGoodsList: [{
-							id: 1,
-							name: '三星(SAMSUNG)10000毫安时 原装移动电源 充电宝 银灰色 双向快充 便携轻薄 适用于安卓/苹果',
-							pic: './img/a7.jpg',
-							price: 45,
-							typeId: 1
-						}, {
-							id: 2,
-							name: '华为 HUAWEI P30 超感光徕卡三摄麒麟980AI智能芯片全面屏屏内指纹版手机8GB+128GB亮黑色全网通',
-							pic: './img/a1.jpg',
-							price: 45,
-							typeId: 1
-						}, {
-							id: 3,
-							name: '三星 Galaxy S10+ 8GB+128GB琉璃绿（SM-G9750）超感官全视屏骁龙855双卡双待全网通4G游戏手机',
-							pic: './img/a6.jpg',
-							price: 45,
-							typeId: 1
-						}, {
-							id: 4,
-							name: 'OPPO Reno 全面屏拍照手机 6G+256G 雾海绿 全网通 移动联通电信 双卡双待手机',
-							pic: './img/a2.jpg',
-							price: 45,
-							typeId: 1
-						},
-						{
-							id: 1,
-							name: '三星(SAMSUNG)10000毫安时 原装移动电源 充电宝 银灰色 双向快充 便携轻薄 适用于安卓/苹果',
-							pic: './img/a7.jpg',
-							price: 45,
-							typeId: 1
-						}, {
-							id: 2,
-							name: '华为 HUAWEI P30 超感光徕卡三摄麒麟980AI智能芯片全面屏屏内指纹版手机8GB+128GB亮黑色全网通',
-							pic: './img/a1.jpg',
-							price: 45,
-							typeId: 1
-						}, {
-							id: 3,
-							name: '三星 Galaxy S10+ 8GB+128GB琉璃绿（SM-G9750）超感官全视屏骁龙855双卡双待全网通4G游戏手机',
-							pic: './img/a6.jpg',
-							price: 45,
-							typeId: 1
-						}, {
-							id: 4,
-							name: 'OPPO Reno 全面屏拍照手机 6G+256G 雾海绿 全网通 移动联通电信 双卡双待手机',
-							pic: './img/a2.jpg',
-							price: 45,
-							typeId: 1
-						},
-						{
-							id: 1,
-							name: '三星(SAMSUNG)10000毫安时 原装移动电源 充电宝 银灰色 双向快充 便携轻薄 适用于安卓/苹果',
-							pic: './img/a7.jpg',
-							price: 45,
-							typeId: 1
-						}, {
-							id: 2,
-							name: '华为 HUAWEI P30 超感光徕卡三摄麒麟980AI智能芯片全面屏屏内指纹版手机8GB+128GB亮黑色全网',
-							pic: './img/a1.jpg',
-							price: 45,
-							typeId: 1
-						}, {
-							id: 3,
-							name: '三星 Galaxy S10+ 8GB+128GB琉璃绿（SM-G9750）超感官全视屏骁龙855双卡双待全网通4G游戏手机',
-							pic: './img/a6.jpg',
-							price: 45,
-							typeId: 1
-						}, {
-							id: 4,
-							name: 'OPPO Reno 全面屏拍照手机 6G+256G 雾海绿 全网通 移动联通电信 双卡双待手机',
-							pic: './img/a2.jpg',
-							price: 45,
-							typeId: 1
-						},
-						{
-							id: 1,
-							name: '台电 30000毫安大容量Type-C输入移动电源充电宝 三USB输出快充 适用于苹果华为小米平板 ',
-							pic: './img/a14.jpg',
-							price: 45,
-							typeId: 2
-						}, {
-							id: 2,
-							name: '华为（HUAWEI）无线充电器 套装版 快充版 无线充快充 适用于Mate20 Pro/Mate20 RS等手机',
-							pic: './img/a8.jpg',
-							price: 45,
-							typeId: 2
-						}, {
-							id: 3,
-							name: '【自营原声版】维肯Air无线蓝牙耳机5.0迷你运动适用于安卓/华为/苹果oppo双耳ipods入耳式 ',
-							pic: './img/a11.jpg',
-							price: 45,
-							typeId: 2
-						}, {
-							id: 4,
-							name: '北极绒 热水袋暖水袋暖手宝暖宝宝电暖宝电热宝 电暖贴身保暖',
-							pic: './img/a3.jpg',
-							price: 45,
-							typeId: 2
-						}, {
-							id: 1,
-							name: '北极绒 热水袋暖水袋暖手宝暖宝宝电暖宝电热宝 电暖贴身保暖',
-							pic: './img/a4.jpg',
-							price: 45,
-							typeId: 3
-						}, {
-							id: 2,
-							name: '北极绒 热水袋暖水袋暖手宝暖宝宝电暖宝电热宝 电暖贴身保暖',
-							pic: './img/a5.jpg',
-							price: 45,
-							typeId: 3
-						}, {
-							id: 3,
-							name: '北极绒 热水袋暖水袋暖手宝暖宝宝电暖宝电热宝 电暖贴身保暖',
-							pic: './img/a6.jpg',
-							price: 45,
-							typeId: 3
-						}, {
-							id: 4,
-							name: '北极绒 热水袋暖水袋暖手宝暖宝宝电暖宝电热宝 电暖贴身保暖',
-							pic: './img/a7.jpg',
-							price: 45,
-							typeId: 3
-						}, {
-							id: 1,
-							name: '北极绒 热水袋暖水袋暖手宝暖宝宝电暖宝电热宝 电暖贴身保暖',
-							pic: './img/a8.jpg',
-							price: 45,
-							typeId: 4
-						}, {
-							id: 2,
-							name: '北极绒 热水袋暖水袋暖手宝暖宝宝电暖宝电热宝 电暖贴身保暖',
-							pic: './img/a9.jpg',
-							price: 45,
-							typeId: 4
-						}, {
-							id: 3,
-							name: '北极绒 热水袋暖水袋暖手宝暖宝宝电暖宝电热宝 电暖贴身保暖',
-							pic: './img/a10.jpg',
-							price: 45,
-							typeId: 4
-						}, {
-							id: 4,
-							name: '北极绒 热水袋暖水袋暖手宝暖宝宝电暖宝电热宝 电暖贴身保暖',
-							pic: './img/a11.jpg',
-							price: 45,
-							typeId: 4
-						}, {
-							id: 1,
-							name: '北极绒 热水袋暖水袋暖手宝暖宝宝电暖宝电热宝 电暖贴身保暖',
-							pic: './img/a12.jpg',
-							price: 45,
-							typeId: 5
-						}, {
-							id: 2,
-							name: '北极绒 热水袋暖水袋暖手宝暖宝宝电暖宝电热宝 电暖贴身保暖',
-							pic: './img/a13.jpg',
-							price: 45,
-							typeId: 5
-						}, {
-							id: 3,
-							name: '北极绒 热水袋暖水袋暖手宝暖宝宝电暖宝电热宝 电暖贴身保暖',
-							pic: './img/a14.jpg',
-							price: 45,
-							typeId: 5
-						}, {
-							id: 4,
-							name: '北极绒 热水袋暖水袋暖手宝暖宝宝电暖宝电热宝 电暖贴身保暖',
-							pic: './img/a15.jpg',
-							price: 45,
-							typeId: 5
-						},
-						{
-							id: 1,
-							name: '北极绒 热水袋暖水袋暖手宝暖宝宝电暖宝电热宝 电暖贴身保暖',
-							pic: './img/a16.jpg',
-							price: 45,
-							typeId: 6
-						}, {
-							id: 2,
-							name: '北极绒 热水袋暖水袋暖手宝暖宝宝电暖宝电热宝 电暖贴身保暖',
-							pic: './img/a17.jpg',
-							price: 45,
-							typeId: 6
-						}, {
-							id: 3,
-							name: '北极绒 热水袋暖水袋暖手宝暖宝宝电暖宝电热宝 电暖贴身保暖',
-							pic: './img/a18.jpg',
-							price: 45,
-							typeId: 6
-						}, {
-							id: 4,
-							name: '北极绒 热水袋暖水袋暖手宝暖宝宝电暖宝电热宝 电暖贴身保暖',
-							pic: './img/a19.jpg',
-							price: 45,
-							typeId: 6
-						},
-					]
+					navGoodsList: []
 				},
 				methods: {
 					navOver: function(i) {
@@ -438,7 +244,206 @@
 					}
 				}
 			});
-		</script>
+			
+var result = [{
+				id: 1,
+				name: '三星(SAMSUNG)10000毫安时 原装移动电源 充电宝 银灰色 双向快充 便携轻薄 适用于安卓/苹果',
+				pic: './img/a7.jpg',
+				price: 45,
+				typeId: 1
+			}, {
+				id: 2,
+				name: '华为 HUAWEI P30 超感光徕卡三摄麒麟980AI智能芯片全面屏屏内指纹版手机8GB+128GB亮黑色全网通',
+				pic: './img/a1.jpg',
+				price: 45,
+				typeId: 1
+			}, {
+				id: 3,
+				name: '三星 Galaxy S10+ 8GB+128GB琉璃绿（SM-G9750）超感官全视屏骁龙855双卡双待全网通4G游戏手机',
+				pic: './oneplus/WebContent/WEB-INF/view/img/a6.jpg',
+				price: 45,
+				typeId: 1
+			}, {
+				id: 4,
+				name: 'OPPO Reno 全面屏拍照手机 6G+256G 雾海绿 全网通 移动联通电信 双卡双待手机',
+				pic: './img/a2.jpg',
+				price: 45,
+				typeId: 1
+			},
+			{
+				id: 1,
+				name: '三星(SAMSUNG)10000毫安时 原装移动电源 充电宝 银灰色 双向快充 便携轻薄 适用于安卓/苹果',
+				pic: './img/a7.jpg',
+				price: 45,
+				typeId: 1
+			}, {
+				id: 2,
+				name: '华为 HUAWEI P30 超感光徕卡三摄麒麟980AI智能芯片全面屏屏内指纹版手机8GB+128GB亮黑色全网通',
+				pic: './img/a1.jpg',
+				price: 45,
+				typeId: 1
+			}, {
+				id: 3,
+				name: '三星 Galaxy S10+ 8GB+128GB琉璃绿（SM-G9750）超感官全视屏骁龙855双卡双待全网通4G游戏手机',
+				pic: './img/a6.jpg',
+				price: 45,
+				typeId: 1
+			}, {
+				id: 4,
+				name: 'OPPO Reno 全面屏拍照手机 6G+256G 雾海绿 全网通 移动联通电信 双卡双待手机',
+				pic: './img/a2.jpg',
+				price: 45,
+				typeId: 1
+			},
+			{
+				id: 1,
+				name: '三星(SAMSUNG)10000毫安时 原装移动电源 充电宝 银灰色 双向快充 便携轻薄 适用于安卓/苹果',
+				pic: './img/a7.jpg',
+				price: 45,
+				typeId: 1
+			}, {
+				id: 2,
+				name: '华为 HUAWEI P30 超感光徕卡三摄麒麟980AI智能芯片全面屏屏内指纹版手机8GB+128GB亮黑色全网',
+				pic: './img/a1.jpg',
+				price: 45,
+				typeId: 1
+			}, {
+				id: 3,
+				name: '三星 Galaxy S10+ 8GB+128GB琉璃绿（SM-G9750）超感官全视屏骁龙855双卡双待全网通4G游戏手机',
+				pic: './img/a6.jpg',
+				price: 45,
+				typeId: 1
+			}, {
+				id: 4,
+				name: 'OPPO Reno 全面屏拍照手机 6G+256G 雾海绿 全网通 移动联通电信 双卡双待手机',
+				pic: './img/a2.jpg',
+				price: 45,
+				typeId: 1
+			},
+			{
+				id: 1,
+				name: '台电 30000毫安大容量Type-C输入移动电源充电宝 三USB输出快充 适用于苹果华为小米平板 ',
+				pic: './img/a14.jpg',
+				price: 45,
+				typeId: 2
+			}, {
+				id: 2,
+				name: '华为（HUAWEI）无线充电器 套装版 快充版 无线充快充 适用于Mate20 Pro/Mate20 RS等手机',
+				pic: './img/a8.jpg',
+				price: 45,
+				typeId: 2
+			}, {
+				id: 3,
+				name: '【自营原声版】维肯Air无线蓝牙耳机5.0迷你运动适用于安卓/华为/苹果oppo双耳ipods入耳式 ',
+				pic: './img/a11.jpg',
+				price: 45,
+				typeId: 2
+			}, {
+				id: 4,
+				name: '北极绒 热水袋暖水袋暖手宝暖宝宝电暖宝电热宝 电暖贴身保暖',
+				pic: './img/a3.jpg',
+				price: 45,
+				typeId: 2
+			}, {
+				id: 1,
+				name: '北极绒 热水袋暖水袋暖手宝暖宝宝电暖宝电热宝 电暖贴身保暖',
+				pic: './img/a4.jpg',
+				price: 45,
+				typeId: 3
+			}, {
+				id: 2,
+				name: '北极绒 热水袋暖水袋暖手宝暖宝宝电暖宝电热宝 电暖贴身保暖',
+				pic: './img/a5.jpg',
+				price: 45,
+				typeId: 3
+			}, {
+				id: 3,
+				name: '北极绒 热水袋暖水袋暖手宝暖宝宝电暖宝电热宝 电暖贴身保暖',
+				pic: './img/a6.jpg',
+				price: 45,
+				typeId: 3
+			}, {
+				id: 4,
+				name: '北极绒 热水袋暖水袋暖手宝暖宝宝电暖宝电热宝 电暖贴身保暖',
+				pic: './img/a7.jpg',
+				price: 45,
+				typeId: 3
+			}, {
+				id: 1,
+				name: '北极绒 热水袋暖水袋暖手宝暖宝宝电暖宝电热宝 电暖贴身保暖',
+				pic: './img/a8.jpg',
+				price: 45,
+				typeId: 4
+			}, {
+				id: 2,
+				name: '北极绒 热水袋暖水袋暖手宝暖宝宝电暖宝电热宝 电暖贴身保暖',
+				pic: './img/a9.jpg',
+				price: 45,
+				typeId: 4
+			}, {
+				id: 3,
+				name: '北极绒 热水袋暖水袋暖手宝暖宝宝电暖宝电热宝 电暖贴身保暖',
+				pic: './img/a10.jpg',
+				price: 45,
+				typeId: 4
+			}, {
+				id: 4,
+				name: '北极绒 热水袋暖水袋暖手宝暖宝宝电暖宝电热宝 电暖贴身保暖',
+				pic: './img/a11.jpg',
+				price: 45,
+				typeId: 4
+			}, {
+				id: 1,
+				name: '北极绒 热水袋暖水袋暖手宝暖宝宝电暖宝电热宝 电暖贴身保暖',
+				pic: './img/a12.jpg',
+				price: 45,
+				typeId: 5
+			}, {
+				id: 2,
+				name: '北极绒 热水袋暖水袋暖手宝暖宝宝电暖宝电热宝 电暖贴身保暖',
+				pic: './img/a13.jpg',
+				price: 45,
+				typeId: 5
+			}, {
+				id: 3,
+				name: '北极绒 热水袋暖水袋暖手宝暖宝宝电暖宝电热宝 电暖贴身保暖',
+				pic: './img/a14.jpg',
+				price: 45,
+				typeId: 5
+			}, {
+				id: 4,
+				name: '北极绒 热水袋暖水袋暖手宝暖宝宝电暖宝电热宝 电暖贴身保暖',
+				pic: './img/a15.jpg',
+				price: 45,
+				typeId: 5
+			},
+			{
+				id: 1,
+				name: '北极绒 热水袋暖水袋暖手宝暖宝宝电暖宝电热宝 电暖贴身保暖',
+				pic: './img/a16.jpg',
+				price: 45,
+				typeId: 6
+			}, {
+				id: 2,
+				name: '北极绒 热水袋暖水袋暖手宝暖宝宝电暖宝电热宝 电暖贴身保暖',
+				pic: './img/a17.jpg',
+				price: 45,
+				typeId: 6
+			}, {
+				id: 3,
+				name: '北极绒 热水袋暖水袋暖手宝暖宝宝电暖宝电热宝 电暖贴身保暖',
+				pic: './img/a18.jpg',
+				price: 45,
+				typeId: 6
+			}, {
+				id: 4,
+				name: '北极绒 热水袋暖水袋暖手宝暖宝宝电暖宝电热宝 电暖贴身保暖',
+				pic: './img/a19.jpg',
+				price: 45,
+				typeId: 6
+			}
+];
+app.navGoodsList = result;
+	</script>
 	</body>
-
 </html>
